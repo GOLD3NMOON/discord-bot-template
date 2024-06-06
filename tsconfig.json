@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "baseUrl": "./src",
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "listEmittedFiles": true,
+    "paths": {
+      "@/*": ["*"],
+      "@utils/*": ["utils/*"],
+      "@settings/*": ["settings/*"],
+      "@strucs/*": ["strucs/*"],
+      "@functions/*": ["app/strucs/*"],
+    },
+  },
+  "include": ["./src/**/*"],
+  "exclude": ["node_modules"]
+}

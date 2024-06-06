@@ -1,0 +1,31 @@
+{
+  "name": "elysian",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "ts-node -r tsconfig-paths/register src/index.ts | pino-prettier -C",
+    "build": "tsc && tsc-alias",
+    "start": "node dist/index.js | pino-prettier -C",
+    "clean": "rimraf dist"
+  },
+  "author": "gold3nmoon",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^14.15.2",
+    "dotenv": "^16.4.5",
+    "pino": "^9.1.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.7.3",
+    "@types/node": "^20.12.12",
+    "pino-prettier": "^2.0.3",
+    "rimraf": "^5.0.7",
+    "ts-node": "^10.9.2",
+    "tsc-alias": "^1.8.10",
+    "tsconfig-paths": "^4.2.0",
+    "tslib": "^2.6.2",
+    "typescript": "^5.4.5"
+  }
+}

@@ -1,0 +1,19 @@
+{
+    "ui": {
+        "colors": {
+            "success": "#1abc9c",
+            "warning": "#f1c40f",
+            "error": "#e74c3c"
+        },
+        "emojis": {
+            "static": {
+                "your_emoji_name": "your emoji id (0000000000)"
+            },
+            "animated": {
+                "your_emoji_name": "your emoji id (0000000000)"
+            }
+        }
+    },
+    "developers": ["Id of the developers"],
+    "prefix": "~"
+}
