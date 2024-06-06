@@ -8,7 +8,7 @@ import {
 } from "discord.js";
 import { config } from "@settings/env";
 import { ActionRowType, Components } from "@strucs/components";
-import { PrefixCommands } from "./PrefixCommands";
+import { PrefixCommands } from "@strucs/prefixcommands";
 import { SlashCommand } from "@strucs/slashcommands";
 import { Event } from "@strucs/events";
 

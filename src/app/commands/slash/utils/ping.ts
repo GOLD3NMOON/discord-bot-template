@@ -18,7 +18,8 @@ export default class Ping extends SlashCommand<ApplicationCommandType.ChatInput>
 			},
 			options: {
 				cooldown: 5,
-				botPermissions: ["SendMessages"],
+				botPermissions: ["SendMessages", "ViewChannel"],
+				userPermissions: ["SendMessages", "ViewChannel"],
 			},
 		});
 	}

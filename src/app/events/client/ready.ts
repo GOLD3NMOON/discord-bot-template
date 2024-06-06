@@ -1,6 +1,6 @@
 import { Event } from "@/strucs/events";
 import { logger } from "@utils/logger";
-import { Awaitable, Message } from "discord.js";
+import { Message } from "discord.js";
 
 export default class Ready extends Event<"messageCreate"> {
 	constructor() {
@@ -8,7 +8,7 @@ export default class Ready extends Event<"messageCreate"> {
 			once: true,
 		});
 	}
-	public run(message: Message<boolean>): Awaitable<void> {
+	public run(message: Message<boolean>): void {
 		logger.success(`Ready! Logged in as ${message.client.user?.tag}!`);
 	}
 }
